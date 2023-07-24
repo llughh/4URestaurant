@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WindowClient" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.seeOrderEmployeeController">
+   <children>
+      <AnchorPane id="bg-hero" opacity="0.3" prefHeight="550.0" prefWidth="400.0" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="550.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="22.0" layoutY="26.0" prefHeight="53.0" prefWidth="357.0" text="Detalles del pedido " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableOrder" layoutX="22.0" layoutY="102.0" prefHeight="418.0" prefWidth="357.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="102.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="231.0" text="Nombre producto" />
+                <TableColumn fx:id="quantity" prefWidth="125.0" text="Cantidad" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WindowClient" prefHeight="661.0" prefWidth="560.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.seeAllOrdersManagerController">
+   <children>
+      <AnchorPane id="bg-hero" opacity="0.3" prefHeight="612.0" prefWidth="400.0" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="612.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="22.0" layoutY="26.0" prefHeight="53.0" prefWidth="357.0" text="Pedidos de este mes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableOrders" layoutX="32.0" layoutY="104.0" prefHeight="496.0" prefWidth="496.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="104.0">
+              <columns>
+                <TableColumn fx:id="idOrder" prefWidth="53.0" text="ID" />
+                <TableColumn fx:id="user" prefWidth="177.0" text="Usuario" />
+                  <TableColumn fx:id="status" prefWidth="99.0" text="Estado" />
+                  <TableColumn fx:id="dateOrder" prefWidth="101.0" text="Fecha" />
+                  <TableColumn fx:id="pay" prefWidth="65.0" text="Pago" />
+              </columns>
+            </TableView>
+            <Label fx:id="total" alignment="CENTER" layoutX="407.0" layoutY="609.0" prefHeight="28.0" prefWidth="121.0" style="-fx-background-color: #FFF;" text="Label" AnchorPane.bottomAnchor="24.0" AnchorPane.rightAnchor="32.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
